@@ -6,6 +6,7 @@ html {
 body{
     font-size: 16px;
     margin:0;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 .container {
@@ -77,6 +78,21 @@ body{
     height: 100%;
     width: 100%;
     overflow: hidden;
+}
+
+
+.faq-title{
+    font-size: 28px;
+    font-weight: 700;
+    color: hsl(237, 12%, 33%);
+    margin-left: 16px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.questions{
+    margin-left: 16px;
+    margin-right: 95px;
 }
 
 /* animations  */
