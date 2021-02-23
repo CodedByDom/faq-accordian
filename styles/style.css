@@ -87,14 +87,50 @@ body{
     color: hsl(237, 12%, 33%);
     margin-left: 16px;
     margin-top: 70px;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 }
 
 .questions{
     margin-left: 16px;
-    margin-right: 95px;
+    
 }
 
+.accordion{
+    height: 50px;
+    width: 350px;
+    text-align: left;
+    padding-left: 0px;
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.active, .accordion:hover{
+    color: hsl(14, 88%, 65%);
+}
+
+.accordion img{
+    margin-top: 5px;
+    float: right;
+}
+
+.panel{
+    font-size: 12px;
+    color: hsl(240, 6%, 50%);
+    font-weight: 400;
+    margin-top: 17px;
+    display: none; 
+    margin-right: 90px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel p{
+    margin-right: 0;
+}
 /* animations  */
 
 @keyframes fade-in-box{
@@ -151,6 +187,14 @@ body{
 
     .box{
         visibility: hidden;
+    }
+
+    .accordion{
+        width: 295px;
+    }
+
+    .panel{
+        margin-right: 20px;
     }
     
 }
