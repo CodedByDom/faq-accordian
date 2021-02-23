@@ -11,7 +11,7 @@ body{
 
 .container {
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,6 +131,10 @@ body{
 .panel p{
     margin-right: 0;
 }
+
+.woman-online-mobile{
+    display: none;
+}
 /* animations  */
 
 @keyframes fade-in-box{
@@ -180,6 +184,7 @@ body{
     .faq-content{
         margin-left: 25px;
         margin-right: 25px;
+        height: 68%;
     }
     .content-img{
         width: 0%;
@@ -191,10 +196,28 @@ body{
 
     .accordion{
         width: 295px;
+        margin-left: 10px;
+        margin-right: 20px;
     }
 
     .panel{
         margin-right: 20px;
+        margin-left: 16px;
+    }
+
+    .woman-online-mobile{
+        position: absolute;
+        top: 5px;
+        left: 48px;
+        display: block;
+        width: 250px;
+        /* margin: 0 auto; */
+    }
+
+    .faq-title{
+        margin-top: 110px;
+        margin-right: 16px;
+        text-align: center;
     }
     
 }
