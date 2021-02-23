@@ -1,3 +1,4 @@
+
 var acc = document.getElementsByClassName('accordion');
 var i;
 
@@ -25,3 +26,11 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
+var arr = document.querySelector('button'); 
+
+for(i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        var point = this.firstElementChild;
+        point.classList.toggle("rotate");
+    });
+}

@@ -1,6 +1,5 @@
 html {
     box-sizing: border-box;
-    
 }
 
 body{
@@ -77,44 +76,47 @@ body{
 .faq-questions{
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow: scroll;
     animation: fade-in 1.5s ease-in 1 both running;
-
 }
-
 
 .faq-title{
     font-size: 28px;
     font-weight: 700;
     color: hsl(237, 12%, 33%);
-    margin-left: 16px;
-    margin-top: 70px;
+    margin: 70px 16px 0px 16px;
     margin-bottom: 27px;
 }
 
 .questions{
     margin-left: 16px;
-    
+    margin-right: 16px;
 }
 
 .accordion{
     height: 50px;
     width: 350px;
     text-align: left;
-    padding-left: 0px;
     background-color: white;
     border: none;
     border-bottom: 1px solid hsl(240, 5%, 91%);
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 400;
+    padding-left: 0;
 }
 
-.active, .accordion:hover{
+ .accordion:hover{
     color: hsl(14, 88%, 65%);
 }
 
+.active {
+    font-weight: 700;
+    /* color: hsl(14, 88%, 65%); */
+
+}
+
 .accordion img{
-    margin-top: 5px;
+    margin-top: 4px;
     float: right;
 }
 
@@ -132,9 +134,18 @@ body{
 
 .panel p{
     margin: 0;
+    /* margin-bottom: 15px; */
 }
 
-.woman-online-mobile{
+.last {
+    margin-bottom: 17px;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.mobile-bg{
     display: none;
 }
 /* animations  */
@@ -194,8 +205,47 @@ body{
 /* Mobile Design */
 
 @media only screen and (max-width: 500px) {
+    .content-img{
+        display: none;
+    }
+
+    .content-img-dont-overflow{
+        display: none;
+    }
 
     .faq-content{
-        margin-left: 25px;
-        margin-right: 25px;    
+        margin: 0 25px;
+        text-align: center;
+        box-shadow: 0px 50px 50px 20px hsla(0, 0%, 0%, 10%);
+    }
+
+    .panel{
+        margin-right:42px; 
+        margin-left: 34px;
+    }
+
+    .accordion{
+        width:300px;
+    }
+
+    .faq-title{
+        margin-top: 110px;
+    }
+
+    .mobile-bg{
+        display: block;
+        top: 120px;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-right: 40px;
+        animation: fade-in 1.5s ease-in 1 both running;
+      }
+
+      .m-bg-pattern{
+          top: 170px;
+          padding-right: 10px;
+          animation: fade-in 1.5s ease-in 1 both running;
+      }
 }
+
